@@ -22,27 +22,70 @@ class App extends React.Component {
           <div className="section1">
             <div className="itemsetname">
               <div className="pencil-button">
-                <p>pencil button</p>
+                <button>pencil button</button>
               </div>
-              <p>Item set name</p>
+              <p>Unnamed Item Set</p>
               <div className="itemsetswitch-button">
-                <p>item set switch button</p>
+                <button>item set switch button</button>
               </div>
             </div>
             <div className="level">
               <p>Current Level</p>
               <div className="levelswitch-button">
-                <p>level switch button</p>
+                <button>level switch button</button>
               </div>
             </div>
-            <div className="delete-button">
-              <p>Delete Button</p>
-            </div>
-            <div className="save-button">
-              <p>Save Button</p>
+            <div className="section1a">
+              <div className="delete-button">
+                <button>Delete Button</button>
+              </div>
+              <div className="save-button">
+                <button>Save Button</button>
+              </div>
             </div>
           </div>
           <div className="section2">
+            <div className="section2a">
+              <div className="filteroptions">
+                <p>filteroptions</p>
+                <div className="foption"><p>filter Option 1</p></div>
+                <div className="foption"><p>filter Option 2</p></div>
+                <div className="foption"><p>filter Option 3</p></div>
+                <div className="foption"><p>filter Option 4</p></div>
+                <div className="foption"><p>filter Option 5</p></div>
+                <div className="foption"><p>filter Option 6</p></div>
+              </div>
+              <div className="items">
+                <p>items</p>
+                <div className="itemsearch">
+                  <p>item search</p>
+                </div>
+                <div className="item"><p>example item 1</p></div>
+                <div className="item"><p>example item 2</p></div>
+                <div className="item"><p>example item 3</p></div>
+                <div className="item"><p>example item 4</p></div>
+                <div className="item"><p>example item 5</p></div>
+                <div className="item"><p>example item 6</p></div>
+              </div>
+            </div>
+            <div className="section2b">
+              <div className="section2b1">
+                <div className="championportrait">
+                  <p>champion Portrait</p>
+                </div>
+                <div className="championname">
+                  <p>champion name</p>
+                </div>
+              </div>
+              <div className="section2b2">
+                <div className="statblock">
+                  <p>statblock</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div className="section3">
 
           </div>
         </div>

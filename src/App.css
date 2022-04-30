@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-color: #282c34;
+  /* background-color: #282c34; */
 }
 
 .App-logo {
@@ -27,11 +27,11 @@
 }
 
 .App-body {
-  border: solid #970000;
+  /* border: solid #970000; */
 }
 
 .App-footer {
-  border: solid #970000
+  border: solid black
 }
 
 .App-link {
@@ -46,4 +46,44 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.section1 {
+  border: blue solid;
+  display: flex;
+  justify-content: space-between;
+}
+
+.section1a {
+  /* border: lightblue solid; */
+  display: flex;
+}
+
+.section2 {
+  border: red solid;
+  display: flex;
+}
+
+.section2a {
+  border: green solid;
+  /* display: flex; */
+  /* justify-content: space-around; */
+}
+
+.section2b {
+  border: lightgreen solid;
+}
+
+.filteroptions {
+  /* border: lightcoral solid; */
+}
+
+.itemsetname {
+  display: flex;
+  /* border: #61dafb solid; */
+}
+
+.level {
+  display: flex;
+  /* border: red solid */
 }
