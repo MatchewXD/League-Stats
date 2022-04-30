@@ -82,11 +82,23 @@ class App extends React.Component {
                   <p>statblock</p>
                 </div>
               </div>
-
+              <div className="section2b3">
+                <p>selected items</p>
+                <div className="selecteditem"><p>selected item 1</p></div>
+                <div className="selecteditem"><p>selected item 2</p></div>
+                <div className="selecteditem"><p>selected item 3</p></div>
+                <div className="selecteditem"><p>selected item 4</p></div>
+                <div className="selecteditem"><p>selected item 5</p></div>
+                <div className="selecteditem"><p>selected item 6</p></div>
+              </div>
             </div>
           </div>
           <div className="section3">
-
+            <div className="abilities"><p>passive</p></div>
+            <div className="abilities"><p>Q</p><div className="abilitylevel"><p>Level switch</p></div></div>
+            <div className="abilities"><p>W</p><div className="abilitylevel"><p>Level switch</p></div></div>
+            <div className="abilities"><p>E</p><div className="abilitylevel"><p>Level switch</p></div></div>
+            <div className="abilities"><p>R</p><div className="abilitylevel"><p>Level switch</p></div></div>
           </div>
         </div>
 

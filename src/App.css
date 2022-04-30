@@ -62,20 +62,44 @@
 .section2 {
   border: red solid;
   display: flex;
+  justify-content: space-between;
 }
 
 .section2a {
   border: green solid;
-  /* display: flex; */
-  /* justify-content: space-around; */
+  width: 50vw;
+  display: flex;
+  justify-content: space-around;
 }
 
 .section2b {
   border: lightgreen solid;
+  width: 50vw;
+}
+
+.section2b1 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.section2b3 {
+  display: flex;
+  justify-content: space-around;
+}
+
+.section3 {
+  display: flex;
+  justify-content: space-around;
 }
 
 .filteroptions {
-  /* border: lightcoral solid; */
+  border: blue solid;
+  width: 20vw;
+}
+
+.items {
+  border: lightblue solid;
+  width: 30vw;
 }
 
 .itemsetname {
@@ -86,4 +110,8 @@
 .level {
   display: flex;
   /* border: red solid */
+}
+
+.statblock {
+  min-height: 150px;
 }
