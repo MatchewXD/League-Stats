@@ -1,6 +1,19 @@
+/*
+Colors
+Background: #080e1e
+Second Background: #030a12
+Forground: #132847
+Text: #a19279
+light Text: #9b9aef
+Highlight background: #735b2f
+Icons: #ebe7d6
+*/
+
+
+
 .App {
   text-align: center;
-  /* background-color: #282c34; */
+  background-color: #131e20;
 }
 
 .App-logo {
@@ -52,11 +65,14 @@
   border: blue solid;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .section1a {
-  /* border: lightblue solid; */
   display: flex;
+  justify-content: space-around;
+  width: 12vw;
+  /* border: lightblue solid; */
 }
 
 .section2 {
@@ -104,14 +120,52 @@
 
 .itemsetname {
   display: flex;
+  align-items: center;
+  width: 25vw;
+  justify-content: space-around;
   /* border: #61dafb solid; */
+}
+
+.itemsetname p {
+  color: #beb688;
 }
 
 .level {
   display: flex;
+  align-items: center;
+  justify-content: space-around;
   /* border: red solid */
+  color: #beb688;
+  width: 12vw;
 }
 
 .statblock {
   min-height: 150px;
+}
+
+.icons {
+  color: #cdbe8e;
+}
+
+/* Buttons */
+.btn-style {
+  background-color: #1b2931;
+  border-width: 1px;
+  border-color: #cdbe8e;
+  border-style: solid;
+  line-height: 22px;
+  border-radius: 50%;
+}
+
+.btn-switch {
+  background-color: #131e20;
+}
+
+.btn-save {
+  color: #beb688;
+  background-color: #1e2327;
+  border-width: 1px;
+  border-color: #cdbe8e;
+  border-style: solid;
+  line-height: 22px;
 }

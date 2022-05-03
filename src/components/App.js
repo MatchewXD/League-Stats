@@ -1,6 +1,9 @@
 import logo from '../logo.svg';
 import '../App.css';
 import React from 'react';
+// import FontAwesomeIcon from 'fontawesome';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faPen, faBars, faTrash } from "@fortawesome/free-solid-svg-icons";
 
 class App extends React.Component {
   constructor(props) {
@@ -22,25 +25,26 @@ class App extends React.Component {
           <div className="section1">
             <div className="itemsetname">
               <div className="pencil-button">
-                <button>pencil button</button>
+                <button className="btn-style"><FontAwesomeIcon icon={faPen} className="icons" /></button>
               </div>
               <p>Unnamed Item Set</p>
               <div className="itemsetswitch-button">
-                <button>item set switch button</button>
+                <FontAwesomeIcon icon={faBars} className="icons" />
               </div>
             </div>
             <div className="level">
-              <p>Current Level</p>
+              <p>Level: 1</p>
               <div className="levelswitch-button">
-                <button>level switch button</button>
+                <FontAwesomeIcon icon={faBars} className="icons" />
               </div>
             </div>
             <div className="section1a">
               <div className="delete-button">
-                <button>Delete Button</button>
+                <button className="btn-style"><FontAwesomeIcon icon={faTrash} className="icons" /></button>
+
               </div>
               <div className="save-button">
-                <button>Save Button</button>
+                <button className="btn-save">Save</button>
               </div>
             </div>
           </div>
@@ -105,7 +109,7 @@ class App extends React.Component {
         <footer className="App-footer">
           <p>Footer</p>
         </footer>
-      </div>
+      </div >
     );
   }
 }
