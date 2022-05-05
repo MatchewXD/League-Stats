@@ -142,13 +142,13 @@ p {
 }
 
 .filteroptions {
-  /* border: solid blue; */
   width: 20vw;
+  /* border: solid blue; */
 }
 
 .items {
-  /* border: solid lightblue; */
   width: 30vw;
+  /* border: solid lightblue; */
 }
 
 .itemsetname {
@@ -211,4 +211,10 @@ p {
   font-family: 'Times New Roman', Times, serif;
   font-size: larger;
   padding: 6px 9px;
+}
+
+.btn-clear {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+  font-weight: bold;
 }

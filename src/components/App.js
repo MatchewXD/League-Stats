@@ -53,7 +53,7 @@ class App extends React.Component {
             <div className="section2">
               <div className="section2a">
                 <div className="filteroptions">
-                  <p>filteroptions</p>
+                  <p className="btn-clear">X Clear</p>
                   <div className="foption"><p>filter Option 1</p></div>
                   <div className="foption"><p>filter Option 2</p></div>
                   <div className="foption"><p>filter Option 3</p></div>
