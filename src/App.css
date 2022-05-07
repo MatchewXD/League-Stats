@@ -142,8 +142,20 @@ p {
 }
 
 .filteroptions {
-  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  margin-left: 3%;
+  width: 20%;
+  min-width: 189px;
   /* border: solid blue; */
+}
+
+.foption {
+  text-align: left;
+}
+
+label {
+  color: #beb688;
 }
 
 .items {
@@ -214,7 +226,59 @@ p {
 }
 
 .btn-clear {
+  text-align: left;
   font-family: 'Times New Roman', Times, serif;
   font-size: large;
   font-weight: bold;
 }
+
+
+/* Custom Checkboxes */
+
+input[type=checkbox] {
+  visibility: hidden;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  display: inline-block;
+  height: 12px;
+  width: 12px;
+  background-color: #0c1314;
+  border: solid #cdbe8e 1px;
+  border-radius: 6%;
+  margin-right: 9px;
+}
+
+.foption:hover input~.checkmark {
+  background-color: #1d2e30;
+}
+
+
+
+/* .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+} */
+
+/* .foption input:checked~.checkmark:after {
+  display: block;
+} */
+
+.foption input:checked~.checkmark {
+  background-color: #cdbe8e;
+}
+
+/* .foption .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+} */

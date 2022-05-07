@@ -54,12 +54,90 @@ class App extends React.Component {
               <div className="section2a">
                 <div className="filteroptions">
                   <p className="btn-clear">X Clear</p>
-                  <div className="foption"><p>filter Option 1</p></div>
-                  <div className="foption"><p>filter Option 2</p></div>
-                  <div className="foption"><p>filter Option 3</p></div>
-                  <div className="foption"><p>filter Option 4</p></div>
-                  <div className="foption"><p>filter Option 5</p></div>
-                  <div className="foption"><p>filter Option 6</p></div>
+                  <div className="foption">
+                    <label>
+                      <input type="checkbox" />
+                      <span className="checkmark"></span>
+                      Attack damage
+                    </label>
+                  </div>
+                  <div className="foption">
+                    <label>
+                      <input type="checkbox" />
+                      <span className="checkmark"></span>
+                      Critical Strike
+                    </label>
+                  </div>
+                  <div className="foption">
+                    <label>
+                      <input type="checkbox" />
+                      <span className="checkmark"></span>
+                      Attack Speed
+                    </label>
+                  </div>
+                  <div className="foption">
+                    <label>
+                      <input type="checkbox" />
+                      <span className="checkmark"></span>
+                      On-Hit Effects
+                    </label>
+                  </div>
+                  <div className="foption">
+                    <label>
+                      <input type="checkbox" />
+                      <span className="checkmark"></span>
+                      Armor Penetration
+                    </label>
+                  </div>
+                  <div className="foption">
+                    <label>
+                      <input type="checkbox" />
+                      <span className="checkmark"></span>
+                      Ability Power
+                    </label>
+                  </div>
+                  <div className="foption">
+                    <label>
+                      <input type="checkbox" />
+                      <span className="checkmark"></span>
+                      Mana & Regeneration
+                    </label>
+                  </div>
+                  <div className="foption">
+                    <label>
+                      <input type="checkbox" />
+                      <span className="checkmark"></span>
+                      Armor
+                    </label>
+                  </div>
+                  <div className="foption">
+                    <label>
+                      <input type="checkbox" />
+                      <span className="checkmark"></span>
+                      Magic Resistance
+                    </label>
+                  </div>
+                  <div className="foption">
+                    <label>
+                      <input type="checkbox" />
+                      <span className="checkmark"></span>
+                      Ability Haste
+                    </label>
+                  </div>
+                  <div className="foption">
+                    <label>
+                      <input type="checkbox" />
+                      <span className="checkmark"></span>
+                      Movement
+                    </label>
+                  </div>
+                  <div className="foption">
+                    <label>
+                      <input type="checkbox" />
+                      <span className="checkmark"></span>
+                      Life Steal & Vamp
+                    </label>
+                  </div>
                 </div>
                 <div className="items">
                   <p>items</p>
