@@ -53,6 +53,63 @@ app.get('/champions', (req, res) => {
     });
 });
 
+app.get('/items', (req, res) => {
+  getData.getItems()
+    .then((response) => {
+      var data = response.rows;
+      var convertItems = function (arr) {
+        var data = arr;
+        var items = {};
+
+        var sortStats = function (str) {
+          var jsonStats = {};
+          var strArr = str.split(' ');
+
+          for (var j = 0; j < strArr.length; j++) {
+            var cWord = strArr[j];
+            for (var h = 0; h < cWord.length; h++) {
+              var cLetter = cWord[h]
+              if (isNaN(cLetter)) {
+                var name = cWord.substring(h, cWord.length);
+                var number = cWord.substring(0, h);
+                jsonStats[name] = number;
+                break;
+              }
+            }
+          }
+          return jsonStats;
+        };
+
+        for (var i = 0; i < data.length; i++) {
+          var cItem = data[i];
+          var cTags = {};
+          if (cItem['tags']) {
+            cTags = cItem['tags'].split(' ');
+          }
+          var cStats = {};
+          if (cItem['stats']) {
+            cStats = sortStats(cItem['stats']);
+          }
+
+
+          items[cItem['id']] = {
+            "name": cItem["name"],
+            "description": cItem["description"],
+            "plaintext": cItem["plaintext"],
+            "image": cItem["image"],
+            "gold": cItem["gold"],
+            "tags": cTags,
+            "stats": cStats
+          }
+        }
+        return items;
+      };
+      var items = convertItems(data);
+      res.send(items);
+    })
+    .catch((err) => console.log(err));
+});
+
 app.listen(port, () => {
   console.log(`Stats app listening on port ${port}`);
 })
