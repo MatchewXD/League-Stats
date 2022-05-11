@@ -32,3 +32,21 @@ COPY champions(id, key, name, image, class, hp, hplvl, mp, mplvl, movespeed, arm
 FROM '/Users/matchewxd/work/personal/League-Stats/champions.csv'
 DELIMITER ','
 CSV HEADER;
+
+DROP TABLE IF EXISTS "items" CASCADE;
+
+CREATE TABLE "items" (
+  "id" INTEGER,
+  "name" VARCHAR(630),
+  "description" VARCHAR(9999),
+  "plaintext" VARCHAR(999),
+  "image" VARCHAR(33),
+  "gold" VARCHAR(90),
+  "tags" VARCHAR(999),
+  "stats" VARCHAR(999)
+);
+
+COPY items(id, name, description, plaintext, image, gold, tags, stats)
+FROM '/Users/matchewxd/work/personal/League-Stats/items.csv'
+DELIMITER ','
+CSV HEADER;
