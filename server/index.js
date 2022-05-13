@@ -1,16 +1,21 @@
 const express = require("express");
 const app = express();
-const port = 3000;
+const port = 3001;
 const getData = require('../database/getData.js');
+// Temp - remove before going onlines
+const cors = require('cors');
+app.use(cors());
 
 app.use(express.json());
 
 app.get('/', (req, res) => {
+  console.log('/ was called');
   res.send('Welcome to "League Stats" Server!')
 });
 
 // Champions
 app.get('/champions', (req, res) => {
+  console.log("/Champions was called");
   getData.getChampions()
     .then((response) => {
       var data = response.rows;
@@ -54,6 +59,7 @@ app.get('/champions', (req, res) => {
 });
 
 app.get('/items', (req, res) => {
+  console.log("/Items was called");
   getData.getItems()
     .then((response) => {
       var data = response.rows;

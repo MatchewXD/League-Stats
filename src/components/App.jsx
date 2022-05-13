@@ -2,6 +2,7 @@ import logo from '../logo.svg';
 // import bgImage from '../lolBackground.jpg';
 import '../App.css';
 import React from 'react';
+import axios from 'axios';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPen, faBars, faTrash } from "@fortawesome/free-solid-svg-icons";
 
@@ -9,9 +10,39 @@ class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      fill: ''
+      champions: {},
+      items: {}
     }
+
+    this.click = this.click.bind(this);
   }
+
+  componentDidMount() {
+    var champs = {};
+    var cItems = {};
+    axios.get('http://localhost:3001/champions')
+      .then((res) => {
+        champs = res.data;
+        // console.log("We have the champions list!!", champs);
+        axios.get('http://localhost:3001/items')
+          .then((res) => {
+            cItems = res.data;
+            // console.log("We have the items list!", cItems);
+            this.setState({ champions: champs, items: cItems });
+          })
+          .catch((err) => {
+            console.log(err);
+          });
+      })
+      .catch((err) => {
+        console.log(err);
+      });
+  }
+
+  click() {
+    console.log('Click!');
+  }
+
 
   render() {
     return (
@@ -27,7 +58,7 @@ class App extends React.Component {
             <div className="section1">
               <div className="itemsetname">
                 <div className="pencil-button">
-                  <button className="btn-style"><FontAwesomeIcon icon={faPen} className="icons" /></button>
+                  <button onClick={this.click} className="btn-style"><FontAwesomeIcon icon={faPen} className="icons" /></button>
                 </div>
                 <strong><p>Unnamed Item Set</p></strong>
                 <div className="itemsetswitch-button">
