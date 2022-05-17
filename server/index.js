@@ -4,7 +4,9 @@ const port = 3001;
 const getData = require('../database/getData.js');
 // Temp - remove before going onlines
 const cors = require('cors');
-app.use(cors());
+app.use(cors({
+  origin: "http://localhost:3000"
+}));
 
 app.use(express.json());
 
@@ -65,7 +67,7 @@ app.get('/items', (req, res) => {
       var data = response.rows;
       var convertItems = function (arr) {
         var data = arr;
-        var items = {};
+        var items = [];
 
         var sortStats = function (str) {
           var jsonStats = {};
@@ -98,7 +100,8 @@ app.get('/items', (req, res) => {
           }
 
 
-          items[cItem['id']] = {
+          items.push({
+            "id": cItem["id"],
             "name": cItem["name"],
             "description": cItem["description"],
             "plaintext": cItem["plaintext"],
@@ -106,7 +109,7 @@ app.get('/items', (req, res) => {
             "gold": cItem["gold"],
             "tags": cTags,
             "stats": cStats
-          }
+          });
         }
         return items;
       };

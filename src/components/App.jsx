@@ -5,21 +5,28 @@ import React from 'react';
 import axios from 'axios';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPen, faBars, faTrash } from "@fortawesome/free-solid-svg-icons";
+import ItemsList from './itemsList.jsx';
 
 class App extends React.Component {
   constructor(props) {
     super(props)
     this.state = {
-      champions: {},
-      items: {}
+      champions: [],
+      items: []
     }
 
     this.click = this.click.bind(this);
+    this.getData = this.getData.bind(this);
   }
 
   componentDidMount() {
-    var champs = {};
-    var cItems = {};
+    // console.log("Component Did Mount");
+    this.getData();
+  }
+
+  getData() {
+    var champs = [];
+    var cItems = [];
     axios.get('http://localhost:3001/champions')
       .then((res) => {
         champs = res.data;
@@ -175,6 +182,7 @@ class App extends React.Component {
                   <div className="itemsearch">
                     <p>item search</p>
                   </div>
+                  <ItemsList items={this.state.items} />
                   <div className="item"><p>example item 1</p></div>
                   <div className="item"><p>example item 2</p></div>
                   <div className="item"><p>example item 3</p></div>

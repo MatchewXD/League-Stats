@@ -282,3 +282,11 @@ input[type=checkbox] {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 } */
+
+/* Images */
+
+.itemImages {
+  border: #cdbe8e solid 1px;
+  width: 50px;
+  height: 50px;
+}
