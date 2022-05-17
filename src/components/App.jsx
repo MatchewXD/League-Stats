@@ -31,7 +31,7 @@ class App extends React.Component {
       .then((res) => {
         champs = res.data;
         // console.log("We have the champions list!!", champs);
-        console.log(champs[0]);
+        // console.log(champs[0]);
         axios.get('http://localhost:3001/items')
           .then((res) => {
             cItems = res.data;
@@ -61,8 +61,6 @@ class App extends React.Component {
             <img src={logo} className="App-logo" alt="logo" />
           </header>
           <div className="App-body">
-            <p>Body</p>
-
             <div className="section1">
               <div className="itemsetname">
                 <div className="pencil-button">
