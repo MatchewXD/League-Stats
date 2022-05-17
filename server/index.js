@@ -30,6 +30,41 @@ app.get('/champions', (req, res) => {
           "key": cChamp["key"],
           "image": cChamp["image"],
           "class": cChamp["class"],
+          "spells": {
+            "q": {
+              "qid": cChamp["qid"],
+              "qname": cChamp["qname"],
+              "qdesc": cChamp["qdesc"],
+              "qtip": cChamp["qtip"],
+              "qimage": cChamp["qimage"]
+            },
+            "w": {
+              "wid": cChamp["wid"],
+              "wname": cChamp["wname"],
+              "wdesc": cChamp["wdesc"],
+              "wtip": cChamp["wtip"],
+              "wimage": cChamp["wimage"]
+            },
+            "e": {
+              "eid": cChamp["eid"],
+              "ename": cChamp["ename"],
+              "edesc": cChamp["edesc"],
+              "etip": cChamp["etip"],
+              "eimage": cChamp["eimage"]
+            },
+            "r": {
+              "rid": cChamp["rid"],
+              "rname": cChamp["rname"],
+              "rdesc": cChamp["rdesc"],
+              "rtip": cChamp["rtip"],
+              "rimage": cChamp["rimage"]
+            },
+            "p": {
+              "pname": cChamp["pname"],
+              "pdesc": cChamp["pdesc"],
+              "pimage": cChamp["pimage"]
+            }
+          },
           "Stats": {
             "hp": cChamp["hp"],
             "hplvl": cChamp["hplvl"],

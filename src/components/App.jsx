@@ -184,12 +184,6 @@ class App extends React.Component {
                     <p>item search</p>
                   </div>
                   <ItemsList items={this.state.items} />
-                  <div className="item"><p>example item 1</p></div>
-                  <div className="item"><p>example item 2</p></div>
-                  <div className="item"><p>example item 3</p></div>
-                  <div className="item"><p>example item 4</p></div>
-                  <div className="item"><p>example item 5</p></div>
-                  <div className="item"><p>example item 6</p></div>
                 </div>
               </div>
               <div className="section2b">
