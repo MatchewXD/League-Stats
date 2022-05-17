@@ -6,7 +6,7 @@ function itemsList({ items }) {
 
   return (
     <>{items ? items.map((item, index) => {
-      if (index === 33 || index === 34 || index === 41 || index === 42 || index === 46 || index === 47 || index === 61 || index === 63 || index === 98 || index === 105 || index === 124 || index === 126 || index === 128 || index === 138 || index === 140 || index === 141 || index === 159 || index === 162) {
+      if (index === 33 || index === 34 || index === 41 || index === 42 || index === 46 || index === 47 || index === 61 || index === 63 || index === 98 || index === 105 || index === 124 || index === 126 || index === 128 || index === 138 || index === 140 || index === 141) {
         // console.log(item.name, "Was removed");
         return null;
       }

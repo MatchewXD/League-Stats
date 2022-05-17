@@ -71,12 +71,7 @@ class App extends React.Component {
                   <FontAwesomeIcon icon={faBars} className="icons" />
                 </div>
               </div>
-              <div className="level">
-                <strong><p>Level: 1</p></strong>
-                <div className="levelswitch-button">
-                  <FontAwesomeIcon icon={faBars} className="icons" />
-                </div>
-              </div>
+
               <div className="section1a">
                 <div className="delete-button">
                   <button className="btn-style"><FontAwesomeIcon icon={faTrash} className="icons" /></button>
@@ -198,42 +193,48 @@ class App extends React.Component {
               <div className="section2b">
                 <div className="section2b1">
                   <div className="championportrait">
-                    <p>champion Portrait</p>
+                    {/* <p>champion Portrait</p> */}
                     <img src={`../images/champions/Aatrox.png`} alt={"Aatrox"} className="championImage" />
+                    <div className="championname">
+                      {/* <p>champion name</p> */}
+                      <p><strong>Aatrox</strong></p>
+                    </div>
                   </div>
-                  <div className="championname">
-                    <p>champion name</p>
-                    <p><strong>Aatrox</strong></p>
+
+                  <div className="level">
+                    <strong><p>Level: 1</p></strong>
+                    <div className="levelswitch-button">
+                      <FontAwesomeIcon icon={faBars} className="icons" />
+                    </div>
                   </div>
                 </div>
                 <div className="section2b2">
                   <div className="statblock">
-                    <p>statblock</p>
+                    {/* <p>statblock</p> */}
                     <div className="stats">
-                      <div><p>Attack Damage</p><p>100</p></div>
-                      <div><p>Ability Power</p><p>0</p></div>
-                      <div><p>Armor</p><p>50</p></div>
-                      <div><p>Magic Resist</p><p>25</p></div>
-                      <div><p>Attack Speed</p><p>0.75</p></div>
-                      <div><p>Ability Haste</p><p>0</p></div>
-                      <div><p>Critical Strike</p><p>0</p></div>
-                      <div><p>Movement Speed</p><p>350</p></div>
-                      <div><p>Health</p><p>750</p></div>
-                      <div><p>Mana</p><p>300</p></div>
-                      <div><p>Health Regeneration</p><p>5</p></div>
-                      <div><p>Mana Regeneration</p><p>3</p></div>
-                      <div><p>Armor Penetration</p><p>5</p></div>
-                      <div><p>Magic Penetration</p><p>5</p></div>
-                      <div><p>Life Steal</p><p>10%</p></div>
-                      <div><p>Omnivamp</p><p>10%</p></div>
-                      <div><p>Attack Range</p><p>175</p></div>
-                      <div><p>Tenacity</p><p>10%</p></div>
-                      <div><p>Items Cost</p><p>300</p></div>
+                      <div className="uniqueblock"><p>Attack Damage</p><p>100</p></div>
+                      <div className="uniqueblock"><p>Ability Power</p><p>0</p></div>
+                      <div className="uniqueblock"><p>Armor</p><p>50</p></div>
+                      <div className="uniqueblock"><p>Magic Resist</p><p>25</p></div>
+                      <div className="uniqueblock"><p>Attack Speed</p><p>0.75</p></div>
+                      <div className="uniqueblock"><p>Ability Haste</p><p>0</p></div>
+                      <div className="uniqueblock"><p>Critical Strike</p><p>0</p></div>
+                      <div className="uniqueblock"><p>Movement Speed</p><p>350</p></div>
+                      <div className="uniqueblock"><p>Health</p><p>750</p></div>
+                      <div className="uniqueblock"><p>Mana</p><p>300</p></div>
+                      <div className="uniqueblock"><p>Health Regeneration</p><p>5</p></div>
+                      <div className="uniqueblock"><p>Mana Regeneration</p><p>3</p></div>
+                      <div className="uniqueblock"><p>Armor Penetration</p><p>5</p></div>
+                      <div className="uniqueblock"><p>Magic Penetration</p><p>5</p></div>
+                      <div className="uniqueblock"><p>Life Steal</p><p>10%</p></div>
+                      <div className="uniqueblock"><p>Omnivamp</p><p>10%</p></div>
+                      <div className="uniqueblock"><p>Attack Range</p><p>175</p></div>
+                      <div className="uniqueblock"><p>Tenacity</p><p>10%</p></div>
                     </div>
                   </div>
                 </div>
                 <div className="section2b3">
-                  <p>selected items</p>
+                  {/* <p>selected items</p> */}
                   <div className="selecteditem"><p>selected item 1</p></div>
                   <div className="selecteditem"><p>selected item 2</p></div>
                   <div className="selecteditem"><p>selected item 3</p></div>
