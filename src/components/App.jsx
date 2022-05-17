@@ -31,6 +31,7 @@ class App extends React.Component {
       .then((res) => {
         champs = res.data;
         // console.log("We have the champions list!!", champs);
+        console.log(champs[0]);
         axios.get('http://localhost:3001/items')
           .then((res) => {
             cItems = res.data;
@@ -195,14 +196,36 @@ class App extends React.Component {
                 <div className="section2b1">
                   <div className="championportrait">
                     <p>champion Portrait</p>
+                    <img src={`../images/champions/Aatrox.png`} alt={"Aatrox"} className="championImage" />
                   </div>
                   <div className="championname">
                     <p>champion name</p>
+                    <p><strong>Aatrox</strong></p>
                   </div>
                 </div>
                 <div className="section2b2">
                   <div className="statblock">
                     <p>statblock</p>
+                    <div className="stats">
+                      <div><p>Attack Damage</p><p>100</p></div>
+                      <div><p>Ability Power</p><p>0</p></div>
+                      <div><p>Armor</p><p>50</p></div>
+                      <div><p>Magic Resist</p><p>25</p></div>
+                      <div><p>Attack Speed</p><p>0.75</p></div>
+                      <div><p>Ability Haste</p><p>0</p></div>
+                      <div><p>Critical Strike</p><p>0</p></div>
+                      <div><p>Movement Speed</p><p>350</p></div>
+                      <div><p>Health</p><p>750</p></div>
+                      <div><p>Mana</p><p>300</p></div>
+                      <div><p>Health Regeneration</p><p>5</p></div>
+                      <div><p>Mana Regeneration</p><p>3</p></div>
+                      <div><p>Armor Penetration</p><p>5</p></div>
+                      <div><p>Magic Penetration</p><p>5</p></div>
+                      <div><p>Life Steal</p><p>10%</p></div>
+                      <div><p>Omnivamp</p><p>10%</p></div>
+                      <div><p>Attack Range</p><p>175</p></div>
+                      <div><p>Tenacity</p><p>10%</p></div>
+                    </div>
                   </div>
                 </div>
                 <div className="section2b3">
