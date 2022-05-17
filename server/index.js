@@ -21,10 +21,11 @@ app.get('/champions', (req, res) => {
   getData.getChampions()
     .then((response) => {
       var data = response.rows;
-      var champions = {};
+      var champions = [];
       for (var i = 0; i < data.length; i++) {
         var cChamp = data[i];
-        champions[cChamp["name"]] = {
+        champions.push({
+          "name": cChamp["name"],
           "id": cChamp["id"],
           "key": cChamp["key"],
           "image": cChamp["image"],
@@ -51,7 +52,7 @@ app.get('/champions', (req, res) => {
             "attackspeed": cChamp["attackspeed"],
             "attackspeedlvl": cChamp["attackspeedlvl"]
           }
-        }
+        });
       }
       res.send(champions);
     })
