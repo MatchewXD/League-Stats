@@ -178,12 +178,23 @@ class App extends React.Component {
                     </label>
                   </div>
                 </div>
-                <div className="items">
-                  <p>items</p>
-                  <div className="itemsearch">
-                    <p>item search</p>
+                <div className="itemsfield">
+                  <div className="searchsort">
+                    <form className="searchform">
+                      <input type="text" id="itemsearch" name="search" placeholder="Item Search" className="searchbar" />
+                    </form>
+                    <form>
+                      <select name="sortbar" id="sortitems" className="sortbar">
+                        <option value="volvo">Gold Up</option>
+                        <option value="saab">Gold Down</option>
+                        <option value="opel">Name Up</option>
+                        <option value="audi">Name Down</option>
+                      </select>
+                    </form>
                   </div>
-                  <ItemsList items={this.state.items} />
+                  <div className="items">
+                    <ItemsList items={this.state.items} />
+                  </div>
                 </div>
               </div>
               <div className="section2b">
@@ -219,6 +230,7 @@ class App extends React.Component {
                       <div><p>Omnivamp</p><p>10%</p></div>
                       <div><p>Attack Range</p><p>175</p></div>
                       <div><p>Tenacity</p><p>10%</p></div>
+                      <div><p>Items Cost</p><p>300</p></div>
                     </div>
                   </div>
                 </div>

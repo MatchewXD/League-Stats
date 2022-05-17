@@ -190,6 +190,42 @@ label {
   /* border: red solid */
 }
 
+.searchform {
+  width: 60%;
+}
+
+.searchbar {
+  color: #fff;
+  background-color: #000306;
+  border: #cdbe8e solid 1px;
+  /* width: 100%; */
+  height: 35px;
+}
+
+#itemsearch[type="text"]:focus {
+  background-color: #0f191f;
+  border: #cdbe8e solid 1px;
+  outline: none;
+}
+
+.sortbar {
+  color: #beb688;
+  background-color: #0f191f;
+  border: #cdbe8e solid 1px;
+  height: 39px;
+}
+
+#sortitems:focus {
+  background-color: #0f191f;
+  outline: none;
+}
+
+.searchsort {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2%;
+}
+
 .stats {
   display: flex;
   justify-content: space-around;
