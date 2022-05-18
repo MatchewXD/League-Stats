@@ -275,6 +275,27 @@ label {
   display: flex;
 }
 
+.stattable {
+  width: 100%;
+}
+
+.stattable,
+th,
+td {
+  /* width: 100%; */
+  color: #cdbe8e;
+  border: #cdbe8e solid 0.5px;
+  border-collapse: collapse;
+}
+
+.stattable th {
+  background-color: #17335a;
+}
+
+.tbheader {
+  height: 50px;
+}
+
 .icons {
   color: #cdbe8e;
 }

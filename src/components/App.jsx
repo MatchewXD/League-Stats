@@ -211,6 +211,28 @@ class App extends React.Component {
                 <div className="section2b2">
                   <div className="statblock">
                     {/* <p>statblock</p> */}
+                    <table className="stattable">
+                      <tr className="tbheader">
+                        <th>Attack Damage</th>
+                        <th>Ability Power</th>
+                        <th>Armor</th>
+                      </tr>
+                      <tr>
+                        <td>100</td>
+                        <td>0</td>
+                        <td>50</td>
+                      </tr>
+                      <tr>
+                        <th>Magic Resist</th>
+                        <th>Attack Speed</th>
+                        <th>Ability Haste</th>
+                      </tr>
+                      <tr>
+                        <td>50</td>
+                        <td>0.75</td>
+                        <td>0</td>
+                      </tr>
+                    </table>
                     <div className="stats">
                       <div className="uniqueblock"><p>Attack Damage</p><p>100</p></div>
                       <div className="uniqueblock"><p>Ability Power</p><p>0</p></div>
