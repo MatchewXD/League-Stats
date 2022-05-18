@@ -217,17 +217,17 @@ class App extends React.Component {
                         <th>Ability Power</th>
                         <th>Armor</th>
                       </tr>
-                      <tr>
+                      <tr className="tbnums">
                         <td>100</td>
                         <td>0</td>
                         <td>50</td>
                       </tr>
-                      <tr>
+                      <tr className="tbheader">
                         <th>Magic Resist</th>
                         <th>Attack Speed</th>
                         <th>Ability Haste</th>
                       </tr>
-                      <tr>
+                      <tr className="tbnums">
                         <td>50</td>
                         <td>0.75</td>
                         <td>0</td>

@@ -276,7 +276,9 @@ label {
 }
 
 .stattable {
+  /* width: 96.5%; */
   width: 100%;
+  table-layout: fixed;
 }
 
 .stattable,
@@ -286,6 +288,7 @@ td {
   color: #cdbe8e;
   border: #cdbe8e solid 0.5px;
   border-collapse: collapse;
+  padding: 1%;
 }
 
 .stattable th {
@@ -293,7 +296,11 @@ td {
 }
 
 .tbheader {
-  height: 50px;
+  height: 35px;
+}
+
+.tbnums {
+  height: 35px;
 }
 
 .icons {
