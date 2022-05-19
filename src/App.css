@@ -295,6 +295,10 @@ td {
   background-color: #17335a;
 }
 
+/* .stattable td {
+  color: #fff;
+} */
+
 .tbheader {
   height: 35px;
 }

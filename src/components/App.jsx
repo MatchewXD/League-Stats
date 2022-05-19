@@ -31,7 +31,7 @@ class App extends React.Component {
       .then((res) => {
         champs = res.data;
         // console.log("We have the champions list!!", champs);
-        // console.log(champs[0]);
+        console.log(champs[0]);
         axios.get('http://localhost:3001/items')
           .then((res) => {
             cItems = res.data;
@@ -231,6 +231,46 @@ class App extends React.Component {
                         <td>50</td>
                         <td>0.75</td>
                         <td>0</td>
+                      </tr>
+                      <tr className="tbheader">
+                        <th>Critical Strike</th>
+                        <th>Movement Speed</th>
+                        <th>Health</th>
+                      </tr>
+                      <tr className="tbnums">
+                        <td>10%</td>
+                        <td>375</td>
+                        <td>750</td>
+                      </tr>
+                      <tr className="tbheader">
+                        <th>Mana</th>
+                        <th>Health Regeneration</th>
+                        <th>Mana Regeneration</th>
+                      </tr>
+                      <tr className="tbnums">
+                        <td>350</td>
+                        <td>6</td>
+                        <td>3</td>
+                      </tr>
+                      <tr className="tbheader">
+                        <th>Armor Penetration</th>
+                        <th>Magic Penetration</th>
+                        <th>Life Steal</th>
+                      </tr>
+                      <tr className="tbnums">
+                        <td>25</td>
+                        <td>15</td>
+                        <td>10%</td>
+                      </tr>
+                      <tr className="tbheader">
+                        <th>Omnivamp</th>
+                        <th>Attack Range</th>
+                        <th>Tenacity</th>
+                      </tr>
+                      <tr className="tbnums">
+                        <td>15%</td>
+                        <td>175</td>
+                        <td>30%</td>
                       </tr>
                     </table>
                     <div className="stats">
