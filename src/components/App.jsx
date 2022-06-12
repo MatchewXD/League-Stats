@@ -212,67 +212,70 @@ class App extends React.Component {
                   <div className="statblock">
                     {/* <p>statblock</p> */}
                     <table className="stattable">
-                      <tr className="tbheader">
-                        <th>Health</th>
-                        <th>Mana</th>
-                        <th>Armor</th>
-                      </tr>
-                      <tr className="tbnums">
-                        <td>750</td>
-                        <td>350</td>
-                        <td>50</td>
-                      </tr>
-                      <tr className="tbheader">
-                        <th>Health Regen. &#40;per 5s&#41;</th>
-                        <th>Mana Regen. &#40;per 5s&#41;</th>
-                        <th>Magic Resist</th>
-                      </tr>
-                      <tr className="tbnums">
-                        <td>8</td>
-                        <td>4</td>
-                        <td>35</td>
-                      </tr>
-                      <tr className="tbheader">
-                        <th>Attack Damage</th>
-                        <th>Ability Power</th>
-                        <th>Attack Speed</th>
-                      </tr>
-                      <tr className="tbnums">
-                        <td>100</td>
-                        <td>75</td>
-                        <td>0.619</td>
-                      </tr>
-                      <tr className="tbheader">
-                        <th>Armor Pen.</th>
-                        <th>Magic Pen.</th>
-                        <th>Critical Strike</th>
+                      <tbody>
 
-                      </tr>
-                      <tr className="tbnums">
-                        <td>18</td>
-                        <td>10</td>
-                        <td>10%</td>
-                      </tr>
-                      <tr className="tbheader">
-                        <th>Ability Haste</th>
-                        <th>Life Steal</th>
-                        <th>Omnivamp</th>
-                      </tr>
-                      <tr className="tbnums">
-                        <td>10%</td>
-                        <td>15%</td>
-                        <td>10%</td>
-                      </tr>
-                      <tr className="tbheader">
-                        <th>Movement Speed</th>
-                        <th>Attack Range</th>
-                        <th>Tenacity</th>
-                      </tr>
-                      <tr className="tbnums">
-                        <td>375</td>
-                        <td>175</td>
-                        <td>30%</td>
-                      </tr>
+                        <tr className="tbheader">
+                          <th>Health</th>
+                          <th>Mana</th>
+                          <th>Armor</th>
+                        </tr>
+                        <tr className="tbnums">
+                          <td>750</td>
+                          <td>350</td>
+                          <td>50</td>
+                        </tr>
+                        <tr className="tbheader">
+                          <th>Health Regen. &#40;per 5s&#41;</th>
+                          <th>Mana Regen. &#40;per 5s&#41;</th>
+                          <th>Magic Resist</th>
+                        </tr>
+                        <tr className="tbnums">
+                          <td>8</td>
+                          <td>4</td>
+                          <td>35</td>
+                        </tr>
+                        <tr className="tbheader">
+                          <th>Attack Damage</th>
+                          <th>Ability Power</th>
+                          <th>Attack Speed</th>
+                        </tr>
+                        <tr className="tbnums">
+                          <td>100</td>
+                          <td>75</td>
+                          <td>0.619</td>
+                        </tr>
+                        <tr className="tbheader">
+                          <th>Armor Pen.</th>
+                          <th>Magic Pen.</th>
+                          <th>Critical Strike</th>
+
+                        </tr>
+                        <tr className="tbnums">
+                          <td>18</td>
+                          <td>10</td>
+                          <td>10%</td>
+                        </tr>
+                        <tr className="tbheader">
+                          <th>Ability Haste</th>
+                          <th>Life Steal</th>
+                          <th>Omnivamp</th>
+                        </tr>
+                        <tr className="tbnums">
+                          <td>10%</td>
+                          <td>15%</td>
+                          <td>10%</td>
+                        </tr>
+                        <tr className="tbheader">
+                          <th>Movement Speed</th>
+                          <th>Attack Range</th>
+                          <th>Tenacity</th>
+                        </tr>
+                        <tr className="tbnums">
+                          <td>375</td>
+                          <td>175</td>
+                          <td>30%</td>
+                        </tr>
+                      </tbody>
                     </table>
 
                     {/* <div className="stats">
@@ -303,14 +306,16 @@ class App extends React.Component {
                     {/* <tr>
                         <th>Selected Items</th>
                       </tr> */}
-                    <tr>
-                      <td><img src="../images/items/1001.png" alt="boots" /></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                      <td></td>
-                    </tr>
+                    <tbody>
+                      <tr>
+                        <td><img src="../images/items/1001.png" alt="boots" /></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                      </tr>
+                    </tbody>
                   </table>
                   {/* <p>selected items</p>
                   <div className="selecteditem"><p>selected item 1</p></div>

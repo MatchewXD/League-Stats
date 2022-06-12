@@ -318,10 +318,10 @@ td {
   table-layout: fixed;
 }
 
-.selecttable td {
-  /* width: 50px; */
-  /* height: 73px; */
-}
+/* .selecttable td {
+  width: 50px;
+height: 73px;
+} */
 
 .icons {
   color: #cdbe8e;
