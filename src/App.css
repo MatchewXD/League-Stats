@@ -143,7 +143,10 @@ p {
 
 .section3 {
   display: flex;
+  border: 1px solid white;
   justify-content: space-around;
+  flex-direction: column;
+  align-items: center;
 }
 
 .filteroptions {
@@ -331,6 +334,33 @@ td {
 
 .icons {
   color: #cdbe8e;
+}
+
+/* Abilities */
+.abilities {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgb(255, 126, 126);
+  min-height: 118px;
+  min-width: 154px;
+  width: 87%;
+}
+
+.abilitiestitle {
+  display: flex;
+}
+
+.abilitiesbody {
+  display: flex;
+}
+
+.abilitiesbody span {
+  color: orange;
+}
+
+.abilities img {
+  width: 63px;
+  height: 63px;
 }
 
 /* Buttons */

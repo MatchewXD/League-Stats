@@ -32,6 +32,7 @@ class App extends React.Component {
         champs = res.data;
         // console.log("We have the champions list!!", champs);
         console.log(champs[0]);
+        // console.log(champs[0].spells.p.pdesc);
         axios.get('http://localhost:3001/items')
           .then((res) => {
             cItems = res.data;
@@ -225,8 +226,8 @@ class App extends React.Component {
                           <td>50</td>
                         </tr>
                         <tr className="tbheader">
-                          <th>Health Regen. &#40;per 5s&#41;</th>
-                          <th>Mana Regen. &#40;per 5s&#41;</th>
+                          <th>Health Regen. <br />&#40;per 5s&#41;</th>
+                          <th>Mana Regen. <br />&#40;per 5s&#41;</th>
                           <th>Magic Resist</th>
                         </tr>
                         <tr className="tbnums">
@@ -277,27 +278,6 @@ class App extends React.Component {
                         </tr>
                       </tbody>
                     </table>
-
-                    {/* <div className="stats">
-                      <div className="uniqueblock"><p>Attack Damage</p><p>100</p></div>
-                      <div className="uniqueblock"><p>Ability Power</p><p>0</p></div>
-                      <div className="uniqueblock"><p>Armor</p><p>50</p></div>
-                      <div className="uniqueblock"><p>Magic Resist</p><p>25</p></div>
-                      <div className="uniqueblock"><p>Attack Speed</p><p>0.75</p></div>
-                      <div className="uniqueblock"><p>Ability Haste</p><p>0</p></div>
-                      <div className="uniqueblock"><p>Critical Strike</p><p>0</p></div>
-                      <div className="uniqueblock"><p>Movement Speed</p><p>350</p></div>
-                      <div className="uniqueblock"><p>Health</p><p>750</p></div>
-                      <div className="uniqueblock"><p>Mana</p><p>300</p></div>
-                      <div className="uniqueblock"><p>Health Regeneration</p><p>5</p></div>
-                      <div className="uniqueblock"><p>Mana Regeneration</p><p>3</p></div>
-                      <div className="uniqueblock"><p>Armor Penetration</p><p>5</p></div>
-                      <div className="uniqueblock"><p>Magic Penetration</p><p>5</p></div>
-                      <div className="uniqueblock"><p>Life Steal</p><p>10%</p></div>
-                      <div className="uniqueblock"><p>Omnivamp</p><p>10%</p></div>
-                      <div className="uniqueblock"><p>Attack Range</p><p>175</p></div>
-                      <div className="uniqueblock"><p>Tenacity</p><p>10%</p></div>
-                    </div> */}
                   </div>
                 </div>
                 <div className="section2b3">
@@ -316,19 +296,24 @@ class App extends React.Component {
                       </tr>
                     </tbody>
                   </table>
-                  {/* <p>selected items</p>
-                  <div className="selecteditem"><p>selected item 1</p></div>
-                  <div className="selecteditem"><p>selected item 2</p></div>
-                  <div className="selecteditem"><p>selected item 3</p></div>
-                  <div className="selecteditem"><p>selected item 4</p></div>
-                  <div className="selecteditem"><p>selected item 5</p></div>
-                  <div className="selecteditem"><p>selected item 6</p></div> */}
                 </div>
               </div>
             </div>
             <div className="section3">
-              <div className="abilities"><p>passive</p></div>
-              <div className="abilities"><p>Q</p><div className="abilitylevel"><p>Level switch</p></div></div>
+              <div className="abilities">
+                <div className="abilitiestitle">
+                  <strong><p>Deathbringer Stance</p></strong>
+                  <p>passive</p>
+                </div>
+                <div className="abilitiesbody">
+                  <img src="../images/passive/Aatrox_Passive.png" alt="aatroxPassive" />
+                  <p>Periodically, Aatrox's next basic attack deals <span>&#40;{45}&#41;</span> bonus physical damage and heals him, based on the target's max health. </p>
+                </div>
+              </div>
+              <div className="abilities">
+                <p>Q</p>
+                <div className="abilitylevel"><p>Level switch</p></div>
+              </div>
               <div className="abilities"><p>W</p><div className="abilitylevel"><p>Level switch</p></div></div>
               <div className="abilities"><p>E</p><div className="abilitylevel"><p>Level switch</p></div></div>
               <div className="abilities"><p>R</p><div className="abilitylevel"><p>Level switch</p></div></div>
