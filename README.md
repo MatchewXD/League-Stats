@@ -17,7 +17,7 @@ If everything goes well and I finish this project then some extra credit I want 
 
 Another piece of extra credit I want to accomplish is adding item passives and actives. One of the major factors in items is its passives or actives. With every build I want every passive and active to be displayed under the stat block so the user can compare not only stats but also passives and actives. This idea may be to much or unnecessary so I will consult some players to see if they think it would be useful to them. 
 
-## ⚜️ Demo
+## 💠 Demo
 
 ### Stat Page
 #### This is the main page of the website where everything happens. On this page the user can filter throught items, pick items and see all the stats from abilities, levels, and items combined. This page is specifically designed to look like League of Legends' item builder for user familiarity. 
@@ -25,7 +25,7 @@ Another piece of extra credit I want to accomplish is adding item passives and a
 
 
 ---
-## 🧪 Technologies
+## 🕹 Technologies
 
 - Axios : 0.27.2
 - Express : 4.18.0
