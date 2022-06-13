@@ -32,7 +32,6 @@ class App extends React.Component {
         champs = res.data;
         // console.log("We have the champions list!!", champs);
         console.log(champs[0]);
-        // console.log(champs[0].spells.p.pdesc);
         axios.get('http://localhost:3001/items')
           .then((res) => {
             cItems = res.data;
@@ -301,22 +300,40 @@ class App extends React.Component {
             </div>
             <div className="section3">
               <div className="abilities">
-                <div className="abilitiestitle">
-                  <strong><p>Deathbringer Stance</p></strong>
-                  <p>passive</p>
-                </div>
-                <div className="abilitiesbody">
-                  <img src="../images/passive/Aatrox_Passive.png" alt="aatroxPassive" />
-                  <p>Periodically, Aatrox's next basic attack deals <span>&#40;{45}&#41;</span> bonus physical damage and heals him, based on the target's max health. </p>
-                </div>
+                <strong className="abilitytitle"><p>Deathbringer Stance</p></strong>
+                <p className="key">passive</p>
+                <p className="abilitylevel"></p>
+                <img src="../images/passive/Aatrox_Passive.png" alt="aatroxPassive" className="abilityimg" />
+                <p className="abilitybody">Periodically, Aatrox's next basic attack deals <span>&#40;{45}&#41;</span> bonus physical damage and heals him, based on the target's max health.</p>
               </div>
               <div className="abilities">
-                <p>Q</p>
-                <div className="abilitylevel"><p>Level switch</p></div>
+                <strong className="abilitytitle"><p>The Darkin Blade</p></strong>
+                <p className="key">Q</p>
+                <p className="abilitylevel">Level switch</p>
+                <img src="../images/spell/AatroxQ.png" alt="aatroxPassive" className="abilityimg" />
+                <p className="abilitybody">Aatrox slams his greatsword down, dealing physical damage. He can swing three times, each with a different area of effect.</p>
               </div>
-              <div className="abilities"><p>W</p><div className="abilitylevel"><p>Level switch</p></div></div>
-              <div className="abilities"><p>E</p><div className="abilitylevel"><p>Level switch</p></div></div>
-              <div className="abilities"><p>R</p><div className="abilitylevel"><p>Level switch</p></div></div>
+              <div className="abilities">
+                <strong className="abilitytitle"><p>Infernal Chains</p></strong>
+                <p className="key">W</p>
+                <p className="abilitylevel">Level switch</p>
+                <img src="../images/spell/AatroxW.png" alt="aatroxPassive" className="abilityimg" />
+                <p className="abilitybody">Aatrox smashes the ground, dealing damage to the first enemy hit. Champions and large monsters have to leave the impact area quickly or they will be dragged to the center and take the damage again.</p>
+              </div>
+              <div className="abilities">
+                <strong className="abilitytitle"><p>Umbral Dash</p></strong>
+                <p className="key">E</p>
+                <p className="abilitylevel">Level switch</p>
+                <img src="../images/spell/AatroxE.png" alt="aatroxPassive" className="abilityimg" />
+                <p className="abilitybody">Passively, Aatrox heals when damaging enemy champions. On activation, he dashes in a direction.</p>
+              </div>
+              <div className="abilities">
+                <strong className="abilitytitle"><p>World Ender</p></strong>
+                <p className="key">R</p>
+                <p className="abilitylevel">Level switch</p>
+                <img src="../images/spell/AatroxR.png" alt="aatroxPassive" className="abilityimg" />
+                <p className="abilitybody">Aatrox unleashes his demonic form, fearing nearby enemy minions and gaining attack damage, increased healing, and Move Speed. If he gets a takedown, this effect is extended.</p>
+              </div>
             </div>
           </div>
 
