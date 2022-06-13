@@ -301,11 +301,10 @@ class App extends React.Component {
                   </div>
                 </div>
                 <div className="section2b3">
-                  <p><strong>Selected Items</strong></p>
+                  <div className="selecteditem">
+                    <p><strong>Selected Items</strong></p>
+                  </div>
                   <table className="selecttable">
-                    {/* <tr>
-                        <th>Selected Items</th>
-                      </tr> */}
                     <tbody>
                       <tr>
                         <td><img src="../images/items/1001.png" alt="boots" /></td>
