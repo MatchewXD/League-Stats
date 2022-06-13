@@ -22,6 +22,7 @@ Another piece of extra credit I want to accomplish is adding item passives and a
 ### Stat Page
 #### This is the main page of the website where everything happens. On this page the user can filter throught items, pick items and see all the stats from abilities, levels, and items combined. This page is specifically designed to look like League of Legends' item builder for user familiarity. 
 <img src="public/firstDemoImage.jpeg" width=900 />
+<img src="public/secondDemoImage.jpeg" width=900 />
 
 
 ---
