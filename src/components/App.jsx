@@ -12,11 +12,14 @@ class App extends React.Component {
     super(props)
     this.state = {
       champions: [],
-      items: []
+      items: [],
+      setName: 'The name is being changed',
+      changeSetName: false
     }
 
     this.click = this.click.bind(this);
     this.getData = this.getData.bind(this);
+    this.renderSetName = this.renderSetName.bind(this);
   }
 
   componentDidMount() {
@@ -49,13 +52,30 @@ class App extends React.Component {
 
   click() {
     console.log('Click!');
+    var isChangeSetName = this.state.changeSetName;
+    if (isChangeSetName) {
+      isChangeSetName = false;
+      this.setState({ changeSetName: false });
+    } else {
+      isChangeSetName = true;
+      this.setState({ changeSetName: true });
+    }
+  }
+
+  renderSetName() {
+    var thisSetName = this.state.setName;
+    var isChangeSetName = this.state.changeSetName;
+    if (isChangeSetName) {
+      return <strong><p>{thisSetName}</p></strong>;
+    } else {
+      return <strong><p>Unnamed Item Set</p></strong>;
+    }
   }
 
 
   render() {
     return (
       <>
-        {/* <img src={bgImage} className="background-image" alt="lolbackground" /> */}
         <div className="App">
           <header className="App-header">
             <img src={logo} className="App-logo" alt="logo" />
@@ -66,7 +86,7 @@ class App extends React.Component {
                 <div className="pencil-button">
                   <button onClick={this.click} className="btn-style"><FontAwesomeIcon icon={faPen} className="icons" /></button>
                 </div>
-                <strong><p>Unnamed Item Set</p></strong>
+                {this.renderSetName()}
                 <div className="itemsetswitch-button">
                   <FontAwesomeIcon icon={faBars} className="icons" />
                 </div>
