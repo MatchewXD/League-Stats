@@ -13,13 +13,16 @@ class App extends React.Component {
     this.state = {
       champions: [],
       items: [],
-      setName: 'The name is being changed',
+      setName: '',
       changeSetName: false
     }
 
     this.click = this.click.bind(this);
     this.getData = this.getData.bind(this);
     this.renderSetName = this.renderSetName.bind(this);
+    this.openSetNameChange = this.openSetNameChange.bind(this);
+    this.setNameOnChange = this.setNameOnChange.bind(this);
+    this.setNameOnSubmit = this.setNameOnSubmit.bind(this);
   }
 
   componentDidMount() {
@@ -34,7 +37,7 @@ class App extends React.Component {
       .then((res) => {
         champs = res.data;
         // console.log("We have the champions list!!", champs);
-        console.log(champs[0]);
+        // console.log(champs[0]);
         axios.get('http://localhost:3001/items')
           .then((res) => {
             cItems = res.data;
@@ -52,6 +55,23 @@ class App extends React.Component {
 
   click() {
     console.log('Click!');
+  }
+
+  setNameOnChange(input) {
+    var inputValue = input.target.value;
+    this.setState({ setName: inputValue });
+  }
+
+  setNameOnSubmit(event) {
+    event.preventDefault();
+    var isChangeSetName = this.state.changeSetName;
+    isChangeSetName = false;
+    this.setState({ changeSetName: isChangeSetName });
+    // console.log("Submitted");
+  }
+
+  openSetNameChange() {
+    console.log("Clicked");
     var isChangeSetName = this.state.changeSetName;
     if (isChangeSetName) {
       isChangeSetName = false;
@@ -66,9 +86,15 @@ class App extends React.Component {
     var thisSetName = this.state.setName;
     var isChangeSetName = this.state.changeSetName;
     if (isChangeSetName) {
-      return <strong><p>{thisSetName}</p></strong>;
+      return <form className="searchform" onSubmit={this.setNameOnSubmit} >
+        <input type="text" id="itemsearch" name="search" value={thisSetName} className="searchbar" onChange={this.setNameOnChange} onBlur={this.setNameOnSubmit} />
+      </form>;
     } else {
-      return <strong><p>Unnamed Item Set</p></strong>;
+      if (thisSetName === '') {
+        return <strong><p>Unnamed Item Set</p></strong>;
+      } else {
+        return <strong><p>{thisSetName}</p></strong>
+      }
     }
   }
 
@@ -84,7 +110,7 @@ class App extends React.Component {
             <div className="section1">
               <div className="itemsetname">
                 <div className="pencil-button">
-                  <button onClick={this.click} className="btn-style"><FontAwesomeIcon icon={faPen} className="icons" /></button>
+                  <button onClick={this.openSetNameChange} className="btn-style"><FontAwesomeIcon icon={faPen} className="icons" /></button>
                 </div>
                 {this.renderSetName()}
                 <div className="itemsetswitch-button">
